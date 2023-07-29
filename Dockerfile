@@ -22,3 +22,5 @@ RUN apt-get update &&\
 ENTRYPOINT [ "node", "server.js" ]
 
 USER 10001
+
+expose 8080
