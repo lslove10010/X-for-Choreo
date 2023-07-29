@@ -23,4 +23,4 @@ ENTRYPOINT [ "node", "server.js" ]
 
 USER 10001
 
-expose 8080
+expose 3000
