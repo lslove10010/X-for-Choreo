@@ -9,9 +9,6 @@ RUN apt-get update &&\
     apt-get install -y iproute2 vim &&\
     npm install -r package.json &&\
     npm install -g pm2 &&\
-    npm i -g @3kmfi6hp/nodejs-proxy
-    addgroup --gid 10001 choreo &&\
-    adduser --disabled-password  --no-create-home --uid 10001 --ingroup choreo choreouser &&\
-    usermod -aG sudo choreouser &&\
+    npm i -g @3kmfi6hp/nodejs-proxy &&\
 CMD ["nodejs-proxy"]
 USER 10001
