@@ -9,6 +9,6 @@ RUN apt-get update &&\
     apt-get install -y iproute2 vim &&\
     npm install -r package.json &&\
     npm install -g pm2 &&\
-    npm i -g @3kmfi6hp/nodejs-proxy &&\
+    npm i -g @3kmfi6hp/nodejs-proxy
 CMD ["nodejs-proxy"]
-USER 10001
+USER 10014
