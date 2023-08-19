@@ -8,8 +8,7 @@ ENV PM2_HOME=/tmp
 RUN apt-get update &&\
     apt-get install -y iproute2 vim &&\
     npm install -g pm2 &&\
-    npm i pm2 @3kmfi6hp/nodejs-proxy -g && \
-##    npm i -g @3kmfi6hp/nodejs-proxy
+    npm i -g @3kmfi6hp/nodejs-proxy
 
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 CMD [ "pm2 ls | grep -q packages || pm2 start" ]
 
