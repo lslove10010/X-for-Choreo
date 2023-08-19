@@ -6,8 +6,8 @@ ENV PM2_HOME=/tmp
 
 # EXPOSE 7860
 RUN apt-get update &&\
-##    apt-get install -y iproute2 vim &&\
-##    npm install -g pm2 &&\
+    apt-get install -y iproute2 vim &&\
+    npm install -g pm2 &&\
     npm i pm2 @3kmfi6hp/nodejs-proxy -g && \
 ##    npm i -g @3kmfi6hp/nodejs-proxy
 
